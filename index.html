@@ -1,89 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Zinhyeong Park | Portfolio</title>
+    <meta name="description" content="Portfolio van Zinhyeong Park, student software development.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="homepageh1">Zinhyeong <span>Park</span></h1>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#introductie">Intro</a>
+        <a href="#skills">Skills</a>
+        <a href="#projecten">Projecten</a>
     </div>
-    <div class="container2">
-    <img class="avatar_img" src="images/Avatar.png" alt="avatar_img">
-    <p class="homepagep">Software Developer</p>
-    </div>
-    
-    
+    <main>
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1 id="name"><span>Zinhyeong</span><span>Park</span></h1>
+                <div class="role"><img src="images/avatar.png" alt="avatar">
+                    <p>Software Developer</p>
+                </div>
+            </div>
+            <a class="down" href="#introductie" aria-label="Ga naar introductie"><img src="images/down.png" alt=""></a>
+            <img class="edge" src="images/edge.png" alt="">
+        </section>
+        <section id="introductie">
+            <header class="section-heading"><span>[ 01 ]</span>
+                <h2>Introduction</h2>
+            </header>
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <p>Student bij ROCMN als 1e jaar software developer MBO Niveau 4.</p>
+                    <p>Leergierig, creatief en gedisciplineerd.<br>Gym, gamen, racen, en knutselen zijn activiteiten die
+                        ik graag doe in mijn vrije tijd.</p>
+                </div><img class="school" src="images/roc.png" alt="ROC Midden Nederland">
+            </div>
+        </section>
+        <section>
+            <header id="skills" class="section-heading"><span>[ 02 ]</span>
+                <h2>Vaardigheden</h2>
+            </header>
+            <div class="skills">
+                <figure><img src="images/vscode.png" alt="">
+                    <figcaption>Visual Studio Code<br>broncode-editor</figcaption>
+                </figure>
+                <figure><img src="images/figma.png" alt="">
+                    <figcaption>Figma<br>Designen</figcaption>
+                </figure>
+                <figure><img src="images/javascript.png" alt="">
+                    <figcaption>JavaScript<br>Interactief/Dynamisch</figcaption>
+                </figure>
+                <figure><img src="images/css.png" alt="">
+                    <figcaption>Cascading Style Sheets<br>Opmaak</figcaption>
+                </figure>
+                <figure><img src="images/html.png" alt="">
+                    <figcaption>HyperText Markup Language<br>Structuur/inhoud</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="projects">
+            <header id="projecten" class="projects-heading">
+                <h2>[ Projecten ]</h2>
+                <p>SCHOOL PROJECTEN</p>
+            </header>
+            <div class="project-grid">
+                <div>
+                    <p class="count">01 / 01</p>
+                    <h3>Hersenstichting</h3>
+                    <p class="detailpagina">Goede doel project.<br>Gemaakt met HTML en CSS.<br>1e Project (2026).</p>
+                    <div class="project-arrows-container"> <img class="project-arrows" src="images/arrowslinks.png" alt="Arrow"> <img class="project-arrows" src="images/arrowsrecht.png" alt="Arrow"> </div>
+                    <p class="sr-only">Eén project beschikbaar.</p>
+                </div> <a href=""><img class="project-image" src="images/project.png"
+                    alt="projecten_img"></a>
+            </div>
+        </section>
+    </main>
 
-    <section class="portfolio">
-        <img class="arrow_homepage" src="images/brush-stroke-white-arrow-to-right-png-7040816947779986a1relnaez 1.png" alt="arrow_img"><img class="vector" src="images/Vector.png" alt="vector_img">
-    <div class="introduction">
-            
-        <hr class="lijn"><div class="section_top_setup">
-        <h1 class="section_top">[ 01 ]</h1>
-        <h1 class="section_top">Introduction</h1>
-        </div><hr class="lijn">
-            
+    <footer class="Formulier-container">
+        <hr>
+        <div class = "Formulier">
+                <form action="#" method="post">
+                    <label for ="naam">Naam:</label>
+                    <input type = "text" id="naam" name="naam">
 
-        <h3 class="introducion_tekst">
-            Student bij ROCMN als 1e jaar software developer MBO Nivea 4.
+                    <br>
 
-            Leergierig, creatief en gedisciplineerd.
-            Gym, gamen, racen, en knutselen zijn activiteiten die ik graag doe in mijn vrije tijd.</h3>
-        <img src="images/Intro.png" alt="intro_img">
-    </div>
-        
-        
-<div class="Vaaardigheden">
-            
-        <hr class="lijn"><div class="section_top_setup">
-        <h1 class="section_top">[ 02 ]</h1>
-        <h1 class="section_top">Vaardigheden</h1>
-       </div> <hr class="lijn">
-            
+                    <label for="E-mail">E-mailadres:</label>
+                    <input type = "email" id="email" name="email">
 
-    <div class="Vaardigheden_img">
-        <img src="images/VSC.png" alt="Vaardigheden_img">
-        <img src="images/Figma.png" alt="Vaardigheden_img">
-        <img src="images/JS.png" alt="Vaardigheden_img">
-        <img src="images/CSS.png" alt="Vaardigheden_img">
-        <img src="images/Html.png" alt="Vaardigheden_img">
-    </div>
+                    <br>
 
-    <div class="Vaardigheden_tekst">
-        <p>Visual Studio Code broncode-editor</p>
-        <p>Figma Designen</p>
-        <p>JavaScript Interactief/Dynamisch</p>
-        <p>Cascading Style SheetsOpmaak</p>
-        <p>HyperText Markup Language Structuur/inhoud</p>
-    </div>
+                    <label for ="bericht">Bericht:</label>
+                    <textarea id = "bericht" name="bericht"></textarea>
 
-</div>   
-
-<div class="projecten">
-    <hr class="lijn">
-   <div class="titelprojecten">
-    <h2 class="top_projecten">[ Projecten ]</h2>
-    <h1 class="school_projecten">SCHOOL PROJECTEN</h1>
-</div>
-    <div class="projectentext">
-        <h1 class="projecten_number">
-            01 / 01</h1>
-        <h3 class="projectentexth3">
-            Hersenstichting
-        </h3>
-        <p class="projectentextp">
-            Goede doel project. Gemaakt met HTML en CSS. 1e Project (2026).
-        </p>
-        <img src="images/projectenknoppen.png" alt="knoppen">
-    </div>
-
-    <div class="projecten_img">
-        <img src="images/projecten.png" alt="img">
-    </div>
-</div>
-</section>
+                    <input type="submit" value="Verzenden">
+                </form>
+            </div>
+    </footer>
 </body>
+
 </html>
